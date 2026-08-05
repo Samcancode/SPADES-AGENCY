@@ -1,1 +1,1 @@
-console.log("SPADES AGENCY is ready.");
+console.log("Samcancode is online.");
