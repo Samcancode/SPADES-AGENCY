@@ -407,6 +407,14 @@ footer {
     font-size: 0.65rem;
 }
 
+.project-image img {
+        width: 100%;                                               height: 100%;                                              display: block;
+        object-fit: cover;
+        }
+.project-image {
+        overflow: hidden;
+        }
+
 @media (max-width: 850px) {
 
     .navbar {
