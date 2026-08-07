@@ -5,7 +5,7 @@
     --gray: #ffff00;
     --blue: #00ffef;
     --green: #b7ff00;
-    --border: #292929;
+    --border: #f5f5f5;
 }
 
 * {
@@ -17,17 +17,15 @@
 html {
     scroll-behavior: smooth;
 }
+a {
+	text-decoration: none;
 
+}
 body {
     background: var(--black);
     color: var(--white);
     font-family: "Space Grotesk", sans-serif;
     line-height: 1.6;
-}
-
-a {
-    color: inherit;
-    text-decoration: none;
 }
 
 .navbar {
@@ -36,13 +34,15 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 1px solid var(--border);
+    border-bottom: 2px solid;
 }
 
 .logo {
     font-size: 1.35rem;
     font-weight: 700;
     letter-spacing: -0.05em;
+    color: var(--white)
+    
 }
 
 .logo span {
@@ -53,10 +53,20 @@ a {
     display: flex;
     gap: 35px;
     Padding-top: 5px;
+    
+
+}
+
+.navbar-section {
+    display: inline-block;                                     padding: 13px 20px;                                        font-size: 0.75rem;
+    font-weight: 700;	        
+    transition: 0.3s;
+    content: center;
+    margin-top: 5px;
 }
 
 .nav-links a {
-    color: var(--blue);
+    color: var(--green);
     font-size: 0.8rem;
     transition: 0.3s;
 }
@@ -137,14 +147,14 @@ a {
 .secondary-button {
     display: inline-block;
     padding: 12px 20px;
-    border: 1px solid var(--border);
+    border: 1.2px solid var(--white);
     font-size: 0.75rem;
     font-weight: 700;
     border-radius: 30px;
 }
 
 .hero-terminal {
-    border: 1px solid var(--border);
+    border: 1.2px solid var(--white);
     background: #0d0d0d;
     font-family: "DM Mono", monospace;
     box-shadow: 20px 20px 0 #121212;
@@ -152,7 +162,7 @@ a {
 
 .terminal-header {
     height: 38px;
-    border-bottom: 1px solid var(--border);
+    border-bottom: 1px solid var(--white);
     display: flex;
     align-items: center;
     gap: 7px;
@@ -191,7 +201,7 @@ a {
 
 .section {
     padding: 120px 6%;
-    border-top: 1px solid var(--border);
+    border-top: 1.2px solid var(--white);
 }
 
 .intro {
@@ -216,7 +226,7 @@ a {
 .intro-content p {
     max-width: 650px;
     margin-top: 35px;
-    color: var(--gray);
+    color: var(--white);
     font-size: 1.05rem;
 }
 
@@ -227,7 +237,7 @@ a {
 .section-heading p {
     margin-top: 25px;
     max-width: 550px;
-    color: var(--gray);
+    color: var(--white);
 }
 
 .service-grid {
@@ -261,7 +271,7 @@ a {
 .service-card p {
     max-width: 480px;
     margin-top: 15px;
-    color: var(--gray);
+    color: var(--white);
 }
 
 .service-tech {
@@ -316,7 +326,7 @@ a {
 }
 
 .project-info p {
-    color: var(--gray);
+    color: var(--white);
     font-size: 0.8rem;
 }
 
@@ -333,7 +343,7 @@ a {
 .about-content p {
     max-width: 650px;
     margin-top: 25px;
-    color: var(--gray);
+    color: var(--white);
     font-size: 1.05rem;
 }
 
@@ -363,7 +373,7 @@ a {
 
 .process-grid p {
     margin-top: 10px;
-    color: var(--gray);
+    color: var(--white);
     font-size: 0.85rem;
 }
 
@@ -378,7 +388,7 @@ a {
 .contact > p:not(.eyebrow) {
     max-width: 550px;
     margin: 0 auto 35px;
-    color: var(--gray);
+    color: var(--white);
 }
 
 footer {
@@ -394,12 +404,12 @@ footer {
 
 .footer-main p {
     margin-top: 10px;
-    color: var(--gray);
+    color: var(--white);
     font-size: 0.8rem;
 }
 
 .footer-location {
-    color: var(--gray);
+    color: var(--white);
     font-family: "DM Mono", monospace;
     font-size: 0.65rem;
 }
