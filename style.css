@@ -499,4 +499,1021 @@ footer {
     .project-image {
 	overflow: hidden;
 	}
+
+.carousel-slides {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 350px;
+}
+
+.carousel-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition: opacity 0.35s ease;
+}
+
+.carousel-slide.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.carousel-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+AMCANCODE — NEW HERO
+   ========================================= */
+
+.hero {
+    position: relative;
+
+    display: grid;
+    grid-template-columns: 1fr 0.85fr;
+
+    min-height: 92vh;
+
+    overflow: hidden;
+
+    background: #ffffed;
+}
+
+
+/* =========================================
+   HERO CONTENT
+   ========================================= */
+
+.hero-content {
+    position: relative;
+    z-index: 5;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    min-height: 92vh;
+
+    padding: 42px 6vw 55px;
+}
+
+
+.hero-intro {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 30px;
+}
+
+
+.hero-eyebrow {
+    font-size: 0.75rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+}
+
+
+.hero-number {
+    font-size: 0.75rem;
+    font-weight: 800;
+}
+
+
+/* =========================================
+   HERO TITLE
+   ========================================= */
+
+.hero-title {
+    max-width: 950px;
+
+    margin: auto 0;
+
+    font-size: clamp(4rem, 8.5vw, 9rem);
+    font-weight: 900;
+    line-height: 0.82;
+    letter-spacing: -0.07em;
+}
+
+
+.hero-title span {
+    display: inline-block;
+
+    padding: 0 0.08em;
+
+    background: #ff5a1f;
+    color: #ffffed;
+
+    transform: rotate(-2deg);
+}
+
+
+/* =========================================
+   HERO BOTTOM
+   ========================================= */
+
+.hero-bottom {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+
+    gap: 40px;
+}
+
+
+.hero-description {
+    max-width: 430px;
+
+    margin: 0;
+
+    font-size: 1rem;
+    line-height: 1.65;
+}
+
+
+.hero-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 18px;
+
+    padding: 16px 22px;
+
+    background: #19a974;
+    color: #ffffed;
+
+    border-radius: 100px;
+
+    font-size: 0.75rem;
+    font-weight: 900;
+
+    text-decoration: none;
+
+    white-space: nowrap;
+
+    transition:
+        transform 0.2s ease,
+        background 0.2s ease;
+}
+
+
+.hero-cta:hover {
+    background: #ff5a1f;
+
+    transform: translateY(-4px);
+}
+
+
+.hero-cta span {
+    font-size: 1.1rem;
+}
+
+
+/* =========================================
+   HERO VISUAL FIELD
+   ========================================= */
+
+.hero-visual {
+    position: relative;
+
+    min-height: 92vh;
+
+    overflow: hidden;
+
+    background: #ffc928;
+}
+
+
+/* =========================================
+   FOOD MOTO CARD
+   ========================================= */
+
+.hero-card {
+    position: absolute;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 25px 60px rgba(38, 26, 20, 0.18);
+}
+
+
+.hero-card-food {
+    top: 11%;
+    left: 9%;
+
+    width: 55%;
+
+    background: #ff5a1f;
+
+    transform: rotate(-5deg);
+
+    z-index: 4;
+}
+
+
+.hero-card-image {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+
+    overflow: hidden;
+}
+
+
+.hero-card-image img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: transform 0.5s ease;
+}
+
+
+.hero-card:hover img {
+    transform: scale(1.06);
+}
+
+
+.hero-card-label {
+    display: grid;
+    grid-template-columns: 35px 1fr;
+    gap: 4px;
+
+    padding: 14px 16px;
+
+    background: #261a14;
+    color: #ffffed;
+}
+
+
+.hero-card-label span {
+    grid-row: span 2;
+
+    font-size: 0.7rem;
+    font-weight: 700;
+}
+
+
+.hero-card-label strong {
+    font-size: 0.85rem;
+    font-weight: 900;
+}
+
+
+.hero-card-label small {
+    font-size: 0.65rem;
+    font-weight: 600;
+}
+
+
+/* =========================================
+   GENT'S ROOM CARD
+   ========================================= */
+
+.hero-card-gents {
+    right: 7%;
+    bottom: 10%;
+
+    width: 48%;
+
+    background: #19a974;
+
+    transform: rotate(5deg);
+
+    z-index: 5;
+}
+
+
+.hero-card-gents .hero-card-label {
+    background: #ffffff;
+    color: #261a14;
+}
+
+
+/* =========================================
+   CODE CARD
+   ========================================= */
+
+.hero-code-card {
+    position: absolute;
+
+    top: 8%;
+    right: 7%;
+
+    z-index: 7;
+
+    width: 210px;
+
+    padding: 16px;
+
+    background: #261a14;
+    color: #ffffed;
+
+    border-radius: 14px;
+
+    transform: rotate(4deg);
+
+    box-shadow:
+        0 18px 40px rgba(38, 26, 20, 0.2);
+}
+
+
+.code-top {
+    display: flex;
+    gap: 5px;
+
+    margin-bottom: 18px;
+}
+
+
+.code-top span {
+    width: 7px;
+    height: 7px;
+
+    border-radius: 50%;
+
+    background: #ff5a1f;
+}
+
+
+.code-top span:nth-child(2) {
+    background: #ffc928;
+}
+
+
+.code-top span:nth-child(3) {
+    background: #19a974;
+}
+
+
+.code-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+
+    font-family: monospace;
+    font-size: 0.75rem;
+    line-height: 1.6;
+}
+
+
+.code-purple {
+    color: #ff8bd1;
+}
+
+
+.code-orange {
+    color: #ff5a1f;
+}
+
+
+.code-green {
+    color: #19a974;
+}
+
+
+/* =========================================
+   NAIROBI STICKER
+   ========================================= */
+
+.hero-sticker {
+    position: absolute;
+
+    right: 39%;
+    top: 43%;
+
+    z-index: 8;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 105px;
+    height: 105px;
+
+    padding: 12px;
+
+    border-radius: 50%;
+
+    background: #ff6f61;
+    color: #261a14;
+
+    text-align: center;
+
+    transform: rotate(-12deg);
+
+    box-shadow:
+        0 15px 35px rgba(38, 26, 20, 0.15);
+}
+
+
+.hero-sticker span {
+    font-size: 0.55rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+}
+
+
+.hero-sticker strong {
+    font-size: 1.3rem;
+    font-weight: 900;
+    line-height: 1;
+}
+
+
+.hero-sticker b {
+    margin-top: 4px;
+
+    font-size: 1rem;
+}
+
+
+/* =========================================
+   MOTION SHAPE
+   ========================================= */
+
+.hero-shape {
+    position: absolute;
+
+    left: 3%;
+    bottom: 4%;
+
+    z-index: 6;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    padding: 9px 14px;
+
+    background: #ffffed;
+    color: #261a14;
+
+    border-radius: 100px;
+
+    transform: rotate(-90deg);
+    transform-origin: left center;
+}
+
+
+.hero-shape span {
+    font-size: 0.6rem;
+    font-weight: 900;
+    letter-spacing: 0.1em;
+}
+
+
+.hero-shape strong {
+    font-size: 1rem;
+}
+
+
+/* =========================================
+   HERO — TABLET
+   ========================================= */
+
+@media (max-width: 900px) {
+
+    .hero {
+        grid-template-columns: 1fr;
+    }
+
+
+    .hero-content {
+        min-height: 70vh;
+
+        padding: 32px 6vw 45px;
+    }
+
+
+    .hero-visual {
+        min-height: 75vh;
+    }
+
+
+    .hero-title {
+        font-size: clamp(4rem, 13vw, 7rem);
+    }
+
+}
+
+
+/* =========================================
+   HERO — MOBILE
+   ========================================= */
+
+@media (max-width: 600px) {
+
+    .hero-content {
+        min-height: 72vh;
+
+        padding: 25px 6vw 35px;
+    }
+
+
+    .hero-intro {
+        align-items: flex-start;
+    }
+
+
+    .hero-eyebrow {
+        max-width: 230px;
+
+        line-height: 1.4;
+    }
+
+
+    .hero-title {
+        font-size: clamp(3.4rem, 16vw, 6rem);
+    }
+
+
+    .hero-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+
+        gap: 25px;
+    }
+
+
+    .hero-description {
+        max-width: 360px;
+    }
+
+
+    .hero-cta {
+        padding: 14px 19px;
+    }
+
+
+    .hero-visual {
+        min-height: 90vw;
+    }
+
+
+    .hero-card-food {
+        top: 9%;
+        left: 5%;
+
+        width: 60%;
+    }
+
+
+    .hero-card-gents {
+        right: 5%;
+        bottom: 8%;
+
+        width: 53%;
+    }
+
+
+    .hero-code-card {
+        top: 5%;
+        right: 4%;
+
+        width: 145px;
+
+        padding: 11px;
+    }
+
+
+    .hero-code-card .code-content {
+        font-size: 0.58rem;
+    }
+
+
+    .hero-sticker {
+        right: 38%;
+        top: 45%;
+
+        width: 78px;
+        height: 78px;
+    }
+
+
+    .hero-sticker strong {
+        font-size: 0.95rem;
+    }
+
+
+    .hero-sticker span {
+        font-size: 0.42rem;
+    }
+
+
+    .hero-shape {
+        display: none;
+    }
+
+}
+  
+.carousel-counter {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 10;
+
+    padding: 6px 11px;
+
+    background: rgba(23, 21, 18, 0.75);
+    color: #ffffed;
+
+    font-size: 0.8rem;
+    font-weight: 600;
+
+    border-radius: 30px;
+    backdrop-filter: blur(6px);
+}
+/* =========================================
+   FOOD MOTO CAROUSEL
+   ========================================= */
+
+.project-carousel {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 350px;
+    overflow: hidden;
+    background: #171512;
+    border-radius: 18px;
+}
+
+
+/* =========================================
+   SLIDES
+   ========================================= */
+
+.carousel-slides {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 350px;
+}
+
+.carousel-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition: opacity 0.35s ease;
+}
+
+.carousel-slide.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.carousel-slide img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+/* =========================================
+   1/3 COUNTER
+   ========================================= */
+
+.carousel-counter {
+    position: absolute;
+
+    top: 16px;
+    right: 16px;
+
+    z-index: 20;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-width: 42px;
+    height: 30px;
+
+    padding: 0 10px;
+
+    background: rgba(23, 21, 18, 0.78);
+
+    color: #ffffed;
+
+    font-size: 0.8rem;
+    font-weight: 600;
+
+    border-radius: 30px;
+
+    pointer-events: none;
+
+    backdrop-filter: blur(6px);
+}
+
+
+/* =========================================
+   PROGRESS DOTS
+   ========================================= */
+
+.carousel-dots {
+    position: absolute;
+
+    left: 50%;
+    bottom: 16px;
+
+    z-index: 20;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    transform: translateX(-50%);
+
+    padding: 8px 12px;
+
+    background: rgba(23, 21, 18, 0.78);
+
+    border-radius: 30px;
+
+    backdrop-filter: blur(6px);
+}
+
+
+/* Individual dot */
+
+.carousel-dot {
+    display: block;
+
+    width: 8px;
+    height: 8px;
+
+    margin: 0;
+    padding: 0;
+
+    border: none;
+
+    background: #ffffed;
+
+    opacity: 0.45;
+
+    border-radius: 50%;
+
+    cursor: pointer;
+
+    flex-shrink: 0;
+
+    transition:
+        opacity 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+/* Active dot */
+
+.carousel-dot.active {
+    opacity: 1;
+
+    transform: scale(1.3);
+}
+
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 600px) {
+
+    .project-carousel {
+        min-height: 300px;
+        border-radius: 14px;
+    }
+
+    .carousel-slides {
+        min-height: 300px;
+    }
+
+    .carousel-counter {
+        top: 12px;
+        right: 12px;
+    }
+
+    .carousel-dots {
+        bottom: 12px;
+    }
+
+}
+/* =========================================
+   SAMCANCODE DROP-DOWN MENU
+   ========================================= */
+
+.site-header {
+    position: relative;
+    z-index: 100;
+}
+
+
+/* =========================================
+   MENU BUTTON
+   ========================================= */
+
+.menu-trigger {
+    position: relative;
+    z-index: 110;
+
+    padding: 12px 18px;
+
+    border: 2px solid #261a14;
+    border-radius: 100px;
+
+    background: #ffffed;
+    color: #261a14;
+
+    font-family: inherit;
+    font-size: 0.8rem;
+    font-weight: 900;
+
+    cursor: pointer;
+
+    transition:
+        background 0.2s ease,
+        color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.menu-trigger:hover {
+    background: #ff5a1f;
+    color: #ffffff;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================
+   DROP-DOWN MENU
+   ========================================= */
+
+.site-menu {
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    z-index: 90;
+
+    width: 100%;
+
+    padding: 110px 8vw 50px;
+
+    background: #ffc928;
+
+    transform: translateY(-105%);
+
+    visibility: hidden;
+
+    transition:
+        transform 0.45s cubic-bezier(0.77, 0, 0.18, 1),
+        visibility 0.45s ease;
+
+    box-shadow: 0 20px 50px rgba(38, 26, 20, 0.12);
+}
+
+
+/* OPEN STATE */
+
+.site-menu.is-open {
+    transform: translateY(0);
+
+    visibility: visible;
+}
+
+
+/* =========================================
+   MENU INNER
+   ========================================= */
+
+.menu-inner {
+    max-width: 1400px;
+
+    margin: 0 auto;
+}
+
+
+/* =========================================
+   MENU HEADING
+   ========================================= */
+
+.menu-heading {
+    display: flex;
+    justify-content: space-between;
+
+    padding-bottom: 20px;
+
+    border-bottom: 1px solid rgba(38, 26, 20, 0.25);
+
+    color: #261a14;
+
+    font-size: 0.7rem;
+    font-weight: 900;
+    letter-spacing: 0.1em;
+}
+
+
+/* =========================================
+   MENU LINKS
+   ========================================= */
+
+.site-menu a {
+    display: block;
+
+    padding: 18px 0;
+
+    border-bottom: 1px solid rgba(38, 26, 20, 0.2);
+
+    color: #261a14;
+
+    font-size: clamp(2.5rem, 6vw, 6rem);
+    font-weight: 900;
+    line-height: 0.95;
+    letter-spacing: -0.05em;
+
+    text-decoration: none;
+
+    transition:
+        color 0.2s ease,
+        padding-left 0.25s ease;
+}
+
+.site-menu a:hover {
+    color: #ff5a1f;
+
+    padding-left: 18px;
+}
+
+
+/* =========================================
+   MENU FOOTER
+   ========================================= */
+
+.menu-footer {
+    display: flex;
+    justify-content: space-between;
+
+    padding-top: 24px;
+
+    color: #261a14;
+
+    font-size: 0.7rem;
+    font-weight: 900;
+    letter-spacing: 0.08em;
+}
+
+
+/* =========================================
+   MENU MOBILE
+   ========================================= */
+
+@media (max-width: 600px) {
+
+    .site-menu {
+        padding: 95px 6vw 35px;
+    }
+
+    .menu-heading {
+        font-size: 0.6rem;
+    }
+
+    .site-menu a {
+        padding: 15px 0;
+
+        font-size: clamp(2.5rem, 14vw, 5rem);
+    }
+
+    .menu-footer {
+        flex-direction: column;
+
+        gap: 8px;
+    }
+
+}
+
 }

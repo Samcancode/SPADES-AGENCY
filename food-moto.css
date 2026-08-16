@@ -1,0 +1,521 @@
+i
+.food-moto-case-study {
+    --moto-orange: #FF5A1F;
+    --sun-yellow: #FFC928;
+    --fresh-green: #19A974;
+    --coral: #FF6F61;
+    --warm-cream: #FFF4D6;
+    --deep-brown: #261A14;
+    --white: #FFFFFF;
+
+    background: var(--warm-cream);
+    color: var(--deep-brown);
+}
+
+
+
+.food-moto-details {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 1px;
+
+    background: var(--deep-brown);
+}
+
+.food-moto-detail {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    padding: 30px;
+
+    background: var(--warm-cream);
+}
+
+.food-moto-detail span {
+    color: var(--moto-orange);
+
+    font-size: 0.7rem;
+    font-weight: 900;
+    letter-spacing: 0.1em;
+}
+
+.food-moto-detail strong {
+    color: var(--deep-brown);
+
+    font-size: 0.85rem;
+    font-weight: 800;
+}
+
+
+/* =========================================
+   PROJECT DETAILS — MOBILE
+   ========================================= */
+
+@media (max-width: 800px) {
+
+    .food-moto-details {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .food-moto-details {
+        grid-template-columns: 1fr;
+    }
+
+}
+/* =========================================
+   HEADER
+   ========================================= */
+
+.food-moto-case-study + .site-footer,
+.food-moto-case-study ~ .site-footer {
+    background: var(--deep-brown);
+    color: var(--warm-cream);
+}
+
+.food-moto-case-study .site-header {
+    background: var(--warm-cream);
+}
+
+
+/* =========================================
+   HERO
+   ========================================= */
+
+.food-moto-hero {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    min-height: 85vh;
+    background: var(--sun-yellow);
+}
+
+.food-moto-hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 8vw;
+}
+
+.food-moto-hero .project-category {
+    display: inline-block;
+
+    margin-bottom: 24px;
+
+    color: var(--deep-brown);
+
+    font-size: 0.85rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+}
+
+.food-moto-hero h1 {
+    margin: 0;
+
+    color: var(--deep-brown);
+
+    font-size: clamp(4rem, 11vw, 10rem);
+    font-weight: 900;
+    line-height: 0.8;
+    letter-spacing: -0.07em;
+}
+
+.food-moto-tagline {
+    margin: 34px 0 0;
+
+    color: var(--moto-orange);
+
+    font-size: clamp(1.2rem, 2.5vw, 2rem);
+    font-weight: 900;
+    letter-spacing: 0.08em;
+}
+
+.food-moto-intro {
+    max-width: 520px;
+
+    margin: 24px 0 0;
+
+    font-size: clamp(1rem, 1.5vw, 1.25rem);
+    line-height: 1.7;
+}
+
+.food-moto-hero-image {
+    min-height: 85vh;
+    overflow: hidden;
+
+    background: var(--moto-orange);
+}
+
+.food-moto-hero-image img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+/* =========================================
+   CASE STUDY SECTIONS
+   ========================================= */
+
+.case-study-section {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    gap: 40px;
+
+    padding: 10vw 8vw;
+
+    border-bottom: 2px solid rgba(38, 26, 20, 0.12);
+}
+
+.case-study-number {
+    color: var(--moto-orange);
+
+    font-size: 1rem;
+    font-weight: 900;
+    letter-spacing: 0.08em;
+}
+
+.case-study-content {
+    max-width: 900px;
+}
+
+.case-study-label {
+    display: inline-block;
+
+    margin-bottom: 24px;
+
+    color: var(--fresh-green);
+
+    font-size: 0.85rem;
+    font-weight: 900;
+    letter-spacing: 0.1em;
+}
+
+.case-study-content h2 {
+    max-width: 850px;
+
+    margin: 0 0 32px;
+
+    color: var(--deep-brown);
+
+    font-size: clamp(3rem, 7vw, 7rem);
+    font-weight: 900;
+    line-height: 0.9;
+    letter-spacing: -0.055em;
+}
+
+.case-study-content p {
+    max-width: 680px;
+
+    margin: 0 0 20px;
+
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+
+/* =========================================
+   BRAND KEYWORDS
+   ========================================= */
+
+.brand-keywords {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+
+    margin-top: 48px;
+}
+
+.brand-keywords span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 13px 20px;
+
+    border-radius: 100px;
+
+    background: var(--moto-orange);
+    color: var(--white);
+
+    font-size: 0.8rem;
+    font-weight: 900;
+    letter-spacing: 0.06em;
+}
+
+.brand-keywords span:nth-child(2) {
+    background: var(--fresh-green);
+}
+
+.brand-keywords span:nth-child(3) {
+    background: var(--coral);
+}
+
+.brand-keywords span:nth-child(4) {
+    background: var(--deep-brown);
+}
+
+
+/* =========================================
+   VISUAL SECTIONS
+   ========================================= */
+
+.case-study-visual {
+    background: var(--white);
+}
+
+.case-study-image {
+    width: 100%;
+
+    margin-top: 60px;
+
+    overflow: hidden;
+
+    border-radius: 24px;
+
+    background: var(--moto-orange);
+}
+
+.case-study-image img {
+    display: block;
+
+    width: 100%;
+    height: auto;
+
+    object-fit: cover;
+}
+
+
+/* =========================================
+   COLOR PALETTE
+   ========================================= */
+
+.food-moto-colors {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+
+    margin-top: 60px;
+
+    overflow: hidden;
+
+    border-radius: 24px;
+}
+
+.color-swatch {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    min-height: 280px;
+
+    padding: 24px;
+}
+
+.color-swatch span {
+    font-size: 0.8rem;
+    font-weight: 900;
+    letter-spacing: 0.05em;
+}
+
+.color-swatch small {
+    margin-top: 6px;
+
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.color-orange {
+    background: var(--moto-orange);
+    color: var(--white);
+}
+
+.color-yellow {
+    background: var(--sun-yellow);
+    color: var(--deep-brown);
+}
+
+.color-green {
+    background: var(--fresh-green);
+    color: var(--white);
+}
+
+.color-coral {
+    background: var(--coral);
+    color: var(--white);
+}
+
+.color-cream {
+    background: var(--warm-cream);
+    color: var(--deep-brown);
+}
+
+
+/* =========================================
+   BRAND APPLICATION SECTION
+   ========================================= */
+
+.case-study-section:nth-of-type(6) {
+    background: var(--moto-orange);
+}
+
+.case-study-section:nth-of-type(6) .case-study-number,
+.case-study-section:nth-of-type(6) .case-study-label,
+.case-study-section:nth-of-type(6) h2,
+.case-study-section:nth-of-type(6) p {
+    color: var(--white);
+}
+
+
+/* =========================================
+   FINAL STATEMENT
+   ========================================= */
+
+.food-moto-final {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 80vh;
+
+    padding: 10vw 8vw;
+
+    text-align: center;
+
+    background: var(--fresh-green);
+    color: var(--white);
+}
+
+.food-moto-final span {
+    margin-bottom: 30px;
+
+    font-size: 0.9rem;
+    font-weight: 900;
+    letter-spacing: 0.12em;
+}
+
+.food-moto-final h2 {
+    max-width: 1100px;
+
+    margin: 0;
+
+    font-size: clamp(4rem, 11vw, 11rem);
+    font-weight: 900;
+    line-height: 0.8;
+    letter-spacing: -0.07em;
+}
+
+.food-moto-final p {
+    max-width: 550px;
+
+    margin: 40px 0 0;
+
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 800px) {
+
+    .food-moto-hero {
+        grid-template-columns: 1fr;
+        min-height: auto;
+    }
+
+    .food-moto-hero-content {
+        padding: 18vw 7vw;
+    }
+
+    .food-moto-hero-image {
+        min-height: 65vh;
+    }
+
+    .case-study-section {
+        grid-template-columns: 1fr;
+        gap: 20px;
+
+        padding: 18vw 7vw;
+    }
+
+    .case-study-number {
+        margin-bottom: 10px;
+    }
+
+    .food-moto-colors {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .color-swatch {
+        min-height: 180px;
+    }
+
+    .color-swatch:last-child {
+        grid-column: span 2;
+    }
+
+    .case-study-image {
+        margin-top: 40px;
+        border-radius: 16px;
+    }
+
+    .food-moto-final {
+        min-height: 70vh;
+        padding: 20vw 7vw;
+    }
+
+}
+
+
+/* =========================================
+   SMALL PHONES
+   ========================================= */
+
+@media (max-width: 480px) {
+
+    .food-moto-hero-content {
+        padding: 22vw 6vw;
+    }
+
+    .food-moto-hero-image {
+        min-height: 55vh;
+    }
+
+    .case-study-section {
+        padding: 22vw 6vw;
+    }
+
+    .food-moto-colors {
+        grid-template-columns: 1fr;
+    }
+
+    .color-swatch {
+        min-height: 160px;
+    }
+
+    .color-swatch:last-child {
+        grid-column: auto;
+    }
+
+    .brand-keywords {
+        gap: 8px;
+    }
+
+    .brand-keywords span {
+        padding: 11px 16px;
+    }
+
+
+}
+
