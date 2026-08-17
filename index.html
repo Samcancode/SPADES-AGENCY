@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
 
     <meta
@@ -24,7 +25,6 @@
         content="#1E2723"
     >
 
-    <!-- Open Graph -->
     <meta
         property="og:title"
         content="Samcancode — Build. Grow. Go Digital."
@@ -49,7 +49,11 @@
         Samcancode — Build. Grow. Go Digital.
     </title>
 
-    <!-- Fonts -->
+
+    <!-- =========================================================
+         FONTS
+         ========================================================= -->
+
     <link
         rel="preconnect"
         href="https://fonts.googleapis.com"
@@ -66,32 +70,38 @@
         rel="stylesheet"
     >
 
-    <!-- Main stylesheet -->
+
+    <!-- =========================================================
+         STYLESHEET
+         ========================================================= -->
+
     <link
         rel="stylesheet"
         href="style.css"
     >
+
 </head>
 
 
 <body>
+
 
     <!-- =========================================================
          PAGE TRANSITION
          ========================================================= -->
 
     <div
-        class="page-transition-overlay"
+        class="page-transition"
         aria-hidden="true"
     >
 
-        <div class="page-transition-inner">
+        <div class="page-transition__inner">
 
-            <span class="page-transition-brand">
+            <span class="page-transition__brand">
                 SAMCANCODE
             </span>
 
-            <span class="page-transition-label">
+            <span class="page-transition__label">
                 DIGITAL CREATIVE STUDIO
             </span>
 
@@ -100,23 +110,6 @@
     </div>
 
 
-    <!-- =========================================================
-         CUSTOM CURSOR
-         Desktop interaction will be controlled by JavaScript.
-         ========================================================= -->
-
-    <div
-        class="site-cursor"
-        aria-hidden="true"
-    >
-
-        <div class="cursor-view">
-            <span class="cursor-arrow">↗</span>
-            <span>VIEW</span>
-        </div>
-
-    </div>
-
 
     <!-- =========================================================
          SITE HEADER
@@ -124,9 +117,8 @@
 
     <header class="site-header">
 
-        <div class="site-header-inner">
+        <div class="site-header__inner">
 
-            <!-- Brand -->
             <a
                 href="#top"
                 class="site-logo"
@@ -136,7 +128,6 @@
             </a>
 
 
-            <!-- Menu trigger -->
             <button
                 class="menu-trigger"
                 id="menu-trigger"
@@ -144,12 +135,19 @@
                 aria-expanded="false"
                 aria-controls="site-menu"
             >
+
                 <span>[</span>
-                MENU
+
+                <span>
+                    MENU
+                </span>
+
                 <span>]</span>
+
             </button>
 
         </div>
+
 
 
         <!-- =====================================================
@@ -162,98 +160,128 @@
             aria-hidden="true"
         >
 
-            <div class="site-menu-inner">
+            <div class="site-menu__inner">
 
-                <div class="menu-header">
 
-                    <span class="menu-label">
+                <div class="site-menu__top">
+
+                    <span>
                         NAVIGATION
                     </span>
 
-                    <span class="menu-location">
+                    <span>
                         NAIROBI, KENYA
                     </span>
 
                 </div>
 
 
-                <div class="menu-links">
+                <div class="site-menu__links">
+
 
                     <a
                         href="#work"
-                        class="menu-link"
+                        class="site-menu__link"
                     >
-                        <span class="menu-link-number">
+
+                        <span class="site-menu__number">
                             01
                         </span>
 
-                        <span class="menu-link-text">
+                        <span class="site-menu__text">
                             WORK
                         </span>
 
-                        <span class="menu-link-arrow">
+                        <span class="site-menu__arrow">
                             ↗
                         </span>
+
                     </a>
 
 
                     <a
                         href="#services"
-                        class="menu-link"
+                        class="site-menu__link"
                     >
-                        <span class="menu-link-number">
+
+                        <span class="site-menu__number">
                             02
                         </span>
 
-                        <span class="menu-link-text">
+                        <span class="site-menu__text">
                             SERVICES
                         </span>
 
-                        <span class="menu-link-arrow">
+                        <span class="site-menu__arrow">
                             ↗
                         </span>
+
                     </a>
 
 
                     <a
                         href="#about"
-                        class="menu-link"
+                        class="site-menu__link"
                     >
-                        <span class="menu-link-number">
+
+                        <span class="site-menu__number">
                             03
                         </span>
 
-                        <span class="menu-link-text">
+                        <span class="site-menu__text">
                             ABOUT
                         </span>
 
-                        <span class="menu-link-arrow">
+                        <span class="site-menu__arrow">
                             ↗
                         </span>
+
+                    </a>
+
+
+                    <a
+                        href="#process"
+                        class="site-menu__link"
+                    >
+
+                        <span class="site-menu__number">
+                            04
+                        </span>
+
+                        <span class="site-menu__text">
+                            PROCESS
+                        </span>
+
+                        <span class="site-menu__arrow">
+                            ↗
+                        </span>
+
                     </a>
 
 
                     <a
                         href="#contact"
-                        class="menu-link"
+                        class="site-menu__link"
                     >
-                        <span class="menu-link-number">
-                            04
+
+                        <span class="site-menu__number">
+                            05
                         </span>
 
-                        <span class="menu-link-text">
+                        <span class="site-menu__text">
                             CONTACT
                         </span>
 
-                        <span class="menu-link-arrow">
+                        <span class="site-menu__arrow">
                             ↗
                         </span>
+
                     </a>
 
                 </div>
 
 
-                <div class="menu-footer">
+                <div class="site-menu__bottom">
 
                     <span>
                         WEB • BRAND • DIGITAL
@@ -272,8 +300,9 @@
     </header>
 
 
+
     <!-- =========================================================
-         MAIN CONTENT
+         MAIN
          ========================================================= -->
 
     <main id="top">
@@ -284,50 +313,43 @@
              ===================================================== -->
 
         <section
-            class="hero-section"
-            aria-labelledby="hero-title"
+            class="hero"
+            id="hero"
         >
 
-            <div class="hero-section-inner">
+            <div class="container hero__container">
 
 
-                <!-- Hero metadata -->
+                <div class="hero__meta">
 
-                <div class="hero-meta">
-
-                    <span class="hero-eyebrow">
+                    <span>
                         DIGITAL CREATIVE STUDIO
                     </span>
 
-                    <span class="hero-location">
+                    <span>
                         NAIROBI, KENYA
                     </span>
 
                 </div>
 
 
-                <!-- Oversized hero statement -->
+                <div class="hero__heading">
 
-                <div class="hero-title-wrapper">
+                    <h1>
 
-                    <h1
-                        id="hero-title"
-                        class="hero-title"
-                    >
-
-                        <span class="hero-title-line">
+                        <span>
                             WE BUILD
                         </span>
 
-                        <span class="hero-title-line hero-title-accent">
+                        <span class="hero__heading-accent">
                             DIGITAL
                         </span>
 
-                        <span class="hero-title-line">
+                        <span>
                             BRANDS THAT
                         </span>
 
-                        <span class="hero-title-line hero-title-accent">
+                        <span class="hero__heading-accent">
                             MOVE.
                         </span>
 
@@ -336,13 +358,12 @@
                 </div>
 
 
-                <!-- Hero bottom -->
+                <div class="hero__bottom">
 
-                <div class="hero-footer">
 
-                    <div class="hero-description-wrapper">
+                    <div class="hero__statement">
 
-                        <p class="hero-description">
+                        <p>
                             Websites, branding and digital experiences
                             for ambitious Kenyan businesses ready to
                             look better, connect better and grow online.
@@ -353,14 +374,14 @@
 
                     <a
                         href="#work"
-                        class="hero-scroll-link"
+                        class="text-link hero__link"
                     >
 
                         <span>
                             EXPLORE OUR WORK
                         </span>
 
-                        <span class="hero-scroll-arrow">
+                        <span>
                             ↓
                         </span>
 
@@ -369,149 +390,46 @@
                 </div>
 
 
-                <!-- =================================================
-                     HERO VISUAL SYSTEM
-                     ================================================= -->
+                <div class="hero__visual">
 
-                <div
-                    class="hero-visual"
-                    aria-hidden="true"
-                >
+                    <div class="hero__visual-image">
 
-                    <!-- Food Moto -->
-                    <div class="hero-project-card hero-project-card-one">
-
-                        <div class="hero-project-image">
-
-                            <img
-                                src="images/food-moto-1.png"
-                                alt=""
-                            >
-
-                        </div>
-
-                        <div class="hero-project-meta">
-
-                            <span>
-                                01
-                            </span>
-
-                            <strong>
-                                FOOD MOTO
-                            </strong>
-
-                            <small>
-                                BRANDING
-                            </small>
-
-                        </div>
+                        <img
+                            src="images/gents-room.png"
+                            alt="The Gent's Room barbershop website project"
+                        >
 
                     </div>
 
 
-                    <!-- The Gent's Room -->
-                    <div class="hero-project-card hero-project-card-two">
-
-                        <div class="hero-project-image">
-
-                            <img
-                                src="images/hero.png"
-                                alt=""
-                            >
-
-                        </div>
-
-                        <div class="hero-project-meta">
-
-                            <span>
-                                02
-                            </span>
-
-                            <strong>
-                                THE GENT'S ROOM
-                            </strong>
-
-                            <small>
-                                WEB DEVELOPMENT
-                            </small>
-
-                        </div>
-
-                    </div>
-
-
-                    <!-- Code visual -->
-                    <div class="hero-code-card">
-
-                        <div class="code-card-header">
-
-                            <span></span>
-                            <span></span>
-                            <span></span>
-
-                        </div>
-
-                        <div class="code-card-content">
-
-                            <span class="code-purple">
-                                &lt;brand&gt;
-                            </span>
-
-                            <span>
-                                ideas
-                            </span>
-
-                            <span class="code-orange">
-                                →
-                            </span>
-
-                            <span class="code-green">
-                                digital
-                            </span>
-
-                            <span class="code-purple">
-                                &lt;/brand&gt;
-                            </span>
-
-                        </div>
-
-                    </div>
-
-
-                    <!-- Nairobi sticker -->
-                    <div class="hero-sticker">
+                    <div class="hero__visual-meta">
 
                         <span>
-                            MADE
+                            SELECTED PROJECT / 01
                         </span>
-
-                        <strong>
-                            IN
-                        </strong>
 
                         <span>
-                            NAIROBI
+                            THE GENT'S ROOM
                         </span>
 
-                        <b>
-                            ↗
-                        </b>
+                        <span>
+                            WEBSITE
+                        </span>
 
                     </div>
 
+                </div>
 
-                    <!-- Scroll indicator -->
-                    <div class="hero-motion-indicator">
 
-                        <span>
-                            SCROLL
-                        </span>
+                <div class="hero__scroll">
 
-                        <strong>
-                            ↓
-                        </strong>
+                    <span>
+                        SCROLL
+                    </span>
 
-                    </div>
+                    <span>
+                        ↓
+                    </span>
 
                 </div>
 
@@ -520,16 +438,18 @@
         </section>
 
 
+
         <!-- =====================================================
              INTRODUCTION
              ===================================================== -->
 
         <section
-            class="intro-section"
-            aria-labelledby="intro-title"
+            class="intro"
+            id="intro"
         >
 
-            <div class="intro-section-inner">
+            <div class="container">
+
 
                 <div class="section-meta">
 
@@ -544,12 +464,11 @@
                 </div>
 
 
-                <div class="intro-content">
+                <div class="intro__content">
 
-                    <h2 id="intro-title">
+                    <h2>
 
                         Technology should help
-
                         <span>
                             your business move forward.
                         </span>
@@ -563,173 +482,182 @@
         </section>
 
 
+
         <!-- =====================================================
              SERVICES
              ===================================================== -->
 
         <section
-            class="services-section"
+            class="services"
             id="services"
-            aria-labelledby="services-title"
         >
 
-            <div class="section-container">
+            <div class="container">
 
 
                 <div class="section-header">
 
-                    <div class="section-index">
-                        02 / SERVICES
+                    <div class="section-meta">
+
+                        <span>
+                            02
+                        </span>
+
+                        <span>
+                            SERVICES
+                        </span>
+
                     </div>
 
-                    <h2
-                        id="services-title"
-                        class="section-title"
-                    >
+
+                    <h2 class="section-title">
+
                         WHAT I
-                        <span>DO.</span>
+                        <span>
+                            DO.
+                        </span>
+
                     </h2>
 
                 </div>
 
 
-                <div class="services-list">
+                <div class="services__list">
 
 
-                    <!-- Service 01 -->
+                    <!-- SERVICE 01 -->
 
-                    <article class="service-item">
+                    <article class="service">
 
-                        <div class="service-number">
+                        <div class="service__number">
                             01
                         </div>
 
-                        <div class="service-main">
 
-                            <h3 class="service-title">
+                        <div class="service__main">
+
+                            <h3>
                                 WEBSITE DESIGN AND DEVELOPMENT
                             </h3>
 
-                            <p class="service-description">
+                            <p>
                                 Modern, responsive websites and landing pages
                                 designed to turn visitors into customers.
                             </p>
 
-                            <span class="service-tech">
+                            <span class="service__tools">
                                 HTML • CSS • JS • REACT
                             </span>
 
                         </div>
 
-                        <div
-                            class="service-arrow"
-                            aria-hidden="true"
-                        >
+
+                        <div class="service__arrow">
                             ↗
                         </div>
 
                     </article>
 
 
-                    <!-- Service 02 -->
 
-                    <article class="service-item">
+                    <!-- SERVICE 02 -->
 
-                        <div class="service-number">
+                    <article class="service">
+
+                        <div class="service__number">
                             02
                         </div>
 
-                        <div class="service-main">
 
-                            <h3 class="service-title">
+                        <div class="service__main">
+
+                            <h3>
                                 DIGITAL MARKETING
                             </h3>
 
-                            <p class="service-description">
+                            <p>
                                 Social media, SEO, paid advertising and digital
                                 strategies that help businesses get discovered.
                             </p>
 
-                            <span class="service-tech">
+                            <span class="service__tools">
                                 SEO • META • GOOGLE • SOCIAL
                             </span>
 
                         </div>
 
-                        <div
-                            class="service-arrow"
-                            aria-hidden="true"
-                        >
+
+                        <div class="service__arrow">
                             ↗
                         </div>
 
                     </article>
 
 
-                    <!-- Service 03 -->
 
-                    <article class="service-item">
+                    <!-- SERVICE 03 -->
 
-                        <div class="service-number">
+                    <article class="service">
+
+                        <div class="service__number">
                             03
                         </div>
 
-                        <div class="service-main">
 
-                            <h3 class="service-title">
+                        <div class="service__main">
+
+                            <h3>
                                 BRANDING & DESIGN
                             </h3>
 
-                            <p class="service-description">
+                            <p>
                                 Visual identities, graphics and creative systems
                                 that make your business recognizable.
                             </p>
 
-                            <span class="service-tech">
+                            <span class="service__tools">
                                 BRAND • DESIGN • CONTENT
                             </span>
 
                         </div>
 
-                        <div
-                            class="service-arrow"
-                            aria-hidden="true"
-                        >
+
+                        <div class="service__arrow">
                             ↗
                         </div>
 
                     </article>
 
 
-                    <!-- Service 04 -->
 
-                    <article class="service-item">
+                    <!-- SERVICE 04 -->
 
-                        <div class="service-number">
+                    <article class="service">
+
+                        <div class="service__number">
                             04
                         </div>
 
-                        <div class="service-main">
 
-                            <h3 class="service-title">
+                        <div class="service__main">
+
+                            <h3>
                                 CONTENT
                             </h3>
 
-                            <p class="service-description">
+                            <p>
                                 Short-form video, social content and creative
                                 assets built to capture attention.
                             </p>
 
-                            <span class="service-tech">
+                            <span class="service__tools">
                                 VIDEO • SOCIAL • CREATIVE
                             </span>
 
                         </div>
 
-                        <div
-                            class="service-arrow"
-                            aria-hidden="true"
-                        >
+
+                        <div class="service__arrow">
                             ↗
                         </div>
 
@@ -742,45 +670,620 @@
         </section>
 
 
+
         <!-- =====================================================
              SELECTED WORK
              ===================================================== -->
 
         <section
-            class="work-section"
+            class="work"
             id="work"
-            aria-labelledby="work-title"
         >
 
-            <div class="section-container">
+            <div class="container">
 
 
                 <div class="section-header">
 
-                    <div class="section-index">
-                        03 / SELECTED WORK
+                    <div class="section-meta">
+
+                        <span>
+                            03
+                        </span>
+
+                        <span>
+                            SELECTED WORK
+                        </span>
+
                     </div>
 
-                    <h2
-                        id="work-title"
-                        class="section-title"
-                    >
+
+                    <h2 class="section-title">
+
                         THINGS I'VE
-                        <span>BUILT.</span>
+                        <span>
+                            BUILT.
+                        </span>
+
                     </h2>
 
                 </div>
 
 
+
                 <!-- =================================================
-                     PROJECT 01 — THE GENT'S ROOM
+                     CASE STUDY 01 — THE GENT'S ROOM
                      ================================================= -->
 
                 <article
-                    class="project-case-study project-case-study-one"
+                    class="case-study case-study--primary"
                     data-project="01"
                 >
 
                     <a
-                        href="
+                        href="https://samcancode.github.io/the-gents-room/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="case-study__visual"
+                    >
 
+                        <img
+                            src="images/gents-room.png"
+                            alt="The Gent's Room barbershop website"
+                        >
+
+                        <span class="case-study__view">
+                            VIEW PROJECT ↗
+                        </span>
+
+                    </a>
+
+
+                    <div class="case-study__details">
+
+
+                        <div class="case-study__index">
+                            01 / WEBSITE
+                        </div>
+
+
+                        <div class="case-study__content">
+
+                            <h3>
+                                THE GENT'S ROOM
+                            </h3>
+
+                            <p>
+                                Premium barbershop website concept designed
+                                and developed for a modern Nairobi grooming
+                                brand. A responsive digital experience focused
+                                on showcasing services and driving appointment
+                                requests.
+                            </p>
+
+                            <a
+                                href="https://samcancode.github.io/the-gents-room/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="text-link"
+                            >
+                                VIEW LIVE PROJECT →
+                            </a>
+
+                        </div>
+
+
+                        <div class="case-study__category">
+                            WEBSITE DESIGN AND DEVELOPMENT
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- =================================================
+                     CASE STUDY 02 — FOOD MOTO
+                     ================================================= -->
+
+                <article
+                    class="case-study case-study--secondary"
+                    data-project="02"
+                >
+
+                    <div class="case-study__visual">
+
+                        <div class="project-counter">
+                            <span>01</span>
+                            <span>/ 03</span>
+                        </div>
+
+
+                        <div class="project-images">
+
+                            <div class="project-image is-active">
+                                <img
+                                    src="images/food-moto-1.png"
+                                    alt="FOOD MOTO brand identity"
+                                >
+                            </div>
+
+                            <div class="project-image">
+                                <img
+                                    src="images/food-moto-2.png"
+                                    alt="FOOD MOTO visual identity"
+                                >
+                            </div>
+
+                            <div class="project-image">
+                                <img
+                                    src="images/food-moto-3.png"
+                                    alt="FOOD MOTO restaurant branding"
+                                >
+                            </div>
+
+                        </div>
+
+
+                        <div class="project-dots">
+
+                            <button
+                                type="button"
+                                class="project-dot is-active"
+                                data-slide="0"
+                                aria-label="Show FOOD MOTO image 1"
+                            ></button>
+
+                            <button
+                                type="button"
+                                class="project-dot"
+                                data-slide="1"
+                                aria-label="Show FOOD MOTO image 2"
+                            ></button>
+
+                            <button
+                                type="button"
+                                class="project-dot"
+                                data-slide="2"
+                                aria-label="Show FOOD MOTO image 3"
+                            ></button>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="case-study__details">
+
+
+                        <div class="case-study__index">
+                            02 / VISUAL IDENTITY
+                        </div>
+
+
+                        <div class="case-study__content">
+
+                            <h3>
+                                FOOD MOTO
+                            </h3>
+
+                            <p>
+                                Modern African grill brand identity built
+                                around fire, bold flavor and social energy.
+                            </p>
+
+                            <a
+                                href="food-moto.html"
+                                class="text-link"
+                            >
+                                VIEW CASE STUDY →
+                            </a>
+
+                        </div>
+
+
+                        <div class="case-study__category">
+                            BRANDING
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- =================================================
+                     CASE STUDY 03 — COMING SOON
+                     ================================================= -->
+
+                <article
+                    class="case-study case-study--coming-soon"
+                    data-project="03"
+                >
+
+                    <div class="case-study__visual">
+
+                        <div class="coming-soon-mark">
+                            +
+                        </div>
+
+                    </div>
+
+
+                    <div class="case-study__details">
+
+
+                        <div class="case-study__index">
+                            03 / DIGITAL MARKETING
+                        </div>
+
+
+                        <div class="case-study__content">
+
+                            <h3>
+                                COMING SOON
+                            </h3>
+
+                            <p>
+                                Digital growth project
+                            </p>
+
+                        </div>
+
+
+                        <div class="case-study__category">
+                            DIGITAL MARKETING
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             ABOUT
+             ===================================================== -->
+
+        <section
+            class="about"
+            id="about"
+        >
+
+            <div class="container">
+
+
+                <div class="section-meta">
+
+                    <span>
+                        04
+                    </span>
+
+                    <span>
+                        ABOUT
+                    </span>
+
+                </div>
+
+
+                <div class="about__grid">
+
+
+                    <h2>
+                        I'M
+                        <span>
+                            SAMWEL ODHIAMBO.
+                        </span>
+                    </h2>
+
+
+                    <div class="about__content">
+
+                        <p class="about__lead">
+                            Samcancode is my personal digital brand.
+                        </p>
+
+
+                        <p>
+                            I am a young entrepreneur with an educational
+                            background in Bachelor of Science in Entrepreneurship.
+                            My main goal is to increase the success rate of Small
+                            and Medium-sized Enterprises (SMEs). Most businesses
+                            close and shut down in the first year in Kenya.
+                            Innovation and Technology are the main strategies I
+                            use to ensure SMEs thrive and succeed in this Journey.
+                            I am passionate about business visibility, connecting
+                            businesses to their target customers and building
+                            and maintaining the relationship.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             PROCESS
+             ===================================================== -->
+
+        <section
+            class="process"
+            id="process"
+        >
+
+            <div class="container">
+
+
+                <div class="section-header">
+
+                    <div class="section-meta">
+
+                        <span>
+                            05
+                        </span>
+
+                        <span>
+                            PROCESS
+                        </span>
+
+                    </div>
+
+
+                    <h2 class="section-title">
+
+                        HOW I
+                        <span>
+                            WORK.
+                        </span>
+
+                    </h2>
+
+                </div>
+
+
+                <div class="process__list">
+
+
+                    <article class="process-step">
+
+                        <span>
+                            01
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                DISCOVER
+                            </h3>
+
+                            <p>
+                                Understand your business, audience and goals.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="process-step">
+
+                        <span>
+                            02
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                BUILD
+                            </h3>
+
+                            <p>
+                                Turn the strategy into a practical digital solution.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="process-step">
+
+                        <span>
+                            03
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                LAUNCH
+                            </h3>
+
+                            <p>
+                                Get your solution live and ready for customers.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="process-step">
+
+                        <span>
+                            04
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                GROW
+                            </h3>
+
+                            <p>
+                                Improve, market and optimize as your business grows.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             CONTACT
+             ===================================================== -->
+
+        <section
+            class="contact"
+            id="contact"
+        >
+
+            <div class="container">
+
+
+                <div class="section-meta">
+
+                    <span>
+                        06
+                    </span>
+
+                    <span>
+                        CONTACT
+                    </span>
+
+                </div>
+
+
+                <div class="contact__content">
+
+
+                    <p class="contact__eyebrow">
+                        HAVE A PROJECT?
+                    </p>
+
+
+                    <h2>
+
+                        LET'S BUILD
+                        <span>
+                            SOMETHING.
+                        </span>
+
+                    </h2>
+
+
+                    <p class="contact__description">
+                        Tell me what you're working on and let's explore
+                        how we can take it online.
+                    </p>
+
+
+                    <a
+                        href="https://wa.me/?text=Hi%20Samcancode%2C%20I%27d%20like%20to%20discuss%20a%20project"
+                        class="contact__button"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        CHAT ON WHATSAPP →
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- =========================================================
+         FOOTER
+         ========================================================= -->
+
+    <footer class="site-footer">
+
+        <div class="container">
+
+
+            <div class="site-footer__main">
+
+
+                <div class="site-footer__brand">
+
+                    <a
+                        href="#top"
+                        class="site-logo"
+                    >
+                        SAMCANCODE
+                    </a>
+
+                    <p>
+                        Build. Grow. Go Digital.
+                    </p>
+
+                </div>
+
+
+                <div class="site-footer__location">
+
+                    <span>
+                        NAIROBI
+                    </span>
+
+                    <span>
+                        KENYA 🇰🇪
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="site-footer__bottom">
+
+                <span>
+                    © 2026 SAMCANCODE
+                </span>
+
+                <span>
+                    WEB • BRAND • DIGITAL
+                </span>
+
+                <a href="#top">
+                    BACK TO TOP ↑
+                </a>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- =========================================================
+         JAVASCRIPT
+         ========================================================= -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
